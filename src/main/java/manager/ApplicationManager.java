@@ -9,12 +9,12 @@ public class ApplicationManager {
     WebDriver wd;
     HelperUser helperUser;
 
-   public void init(){
-       wd = new ChromeDriver();
-       wd.manage().window().maximize();
-       wd.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-       wd.navigate().to("https://telranedu.web.app/home");
-       helperUser = new HelperUser(wd);
+    public void init(){
+        wd = new ChromeDriver();
+        wd.manage().window().maximize();
+        wd.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        wd.navigate().to("https://telranedu.web.app/home");
+        helperUser = new HelperUser(wd);
 
 
 
@@ -25,7 +25,7 @@ public class ApplicationManager {
     }
 
     public void stop(){
-    wd.quit();
+        wd.quit();
 
     }
 }
