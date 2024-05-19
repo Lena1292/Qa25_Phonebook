@@ -38,7 +38,7 @@ public class HelperBase {
     }
 
 
-    public void pause(int time) {
+    public void pause(int time){
         try {
             Thread.sleep(time);
         } catch (InterruptedException e) {
@@ -60,4 +60,6 @@ public class HelperBase {
         }
         return false;
     }
+
+
 }
